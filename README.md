@@ -106,7 +106,124 @@ python compile_dataset.py with cfg.eval
 ```
 
 <h2 id="analysis">Dataset Analysis</h2>
+The file length distributions of the four DnR building blocks are as follows. Note that FMA files occupy a single bin since all files are 30-sec length:
 
+<br><br>
+
+<img src="./assets/filelengths.pdf" alt=""border="3" />
+
+<br><br>
+
+The file length distributions of the four DnR building blocks are as follows. Note that FMA files occupy a single bin since all files are 30-sec length.
+
+<br><br>
+
+<img src="./assets/data_stats.png" alt=""border="3" />
+
+
+<hr />
+
+-----
+
+<h2 id="analysis">Experimental Validation</h2>
+
+<table>
+    <tr>
+        <td></td>
+        <td colspan="3">16 kHz</td>
+        <td colspan="3">44.1 kHz</td>
+    </tr>
+    <tr>
+        <td>Model</td>
+        <td>Music</td>
+        <td>Speech</td>
+        <td>SFX</td>
+        <td>Music</td>
+        <td>Speech</td>
+        <td>SFX</td>
+    </tr>
+    <tr>
+        <td> No processing</td>
+        <td>-6.61</td>
+        <td>1.04</td>
+        <td>-5.19</td>
+        <td>-6.70</td>
+        <td>0.94</td>
+        <td>-4.94</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/oraclepsf.pdf" alt="" height=15 border=3></td>
+        <td>11.99</td>
+        <td>18.02</td>
+        <td>13.60</td>
+        <td>11.99</td>
+        <td>18.03</td>
+        <td>13.83</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/tasnet.pdf" alt="" height=15 border=3></td>
+        <td>2.52</td>
+        <td>11.38</td>
+        <td>4.15</td>
+        <td>2.06</td>
+        <td>10.72</td>
+        <td>4.01</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/masktcn.pdf" alt="" height=15 border=3></td>
+        <td>2.74</td>
+        <td>11.01</td>
+        <td>4.02</td>
+        <td>2.25</td>
+        <td>10.58</td>
+        <td>4.47</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/xumx32.pdf" alt="" height=15 border=3></td>
+        <td>3.37</td>
+        <td>11.77</td>
+        <td>4.73</td>
+        <td>3.41</td>
+        <td>11.76</td>
+        <td>5.16</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/xumx64.pdf" alt="" height=15 border=3></td>
+        <td>3.83</td>
+        <td>12.04</td>
+        <td>4.92</td>
+        <td>3.91</td>
+        <td>11.97</td>
+        <td>5.42</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/xumx256.pdf" alt="" height=15 border=3></td>
+        <td>3.06</td>
+        <td>10.34</td>
+        <td>3.93</td>
+        <td>2.82</td>
+        <td>9.93</td>
+        <td>4.12</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/xumx64multidec.pdf" alt="" height=15 border=3></td>
+        <td>3.84</td>
+        <td>11.99</td>
+        <td>4.99</td>
+        <td>3.69</td>
+        <td>11.64</td>
+        <td>5.11</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/xumxmixedmultidec.pdf" alt="" height=15 border=3></td>
+        <td>4.47</td>
+        <td>12.69</td>
+        <td>5.55</td>
+        <td>4.62</td>
+        <td>12.68</td>
+        <td>6.03</td>
+    </tr>
+</table>
 -----
 
 <h2 id="examples">Audio Example</h2>
