@@ -105,28 +105,51 @@ python compile_dataset.py with cfg.val
 python compile_dataset.py with cfg.eval
 ```
 
+-----
+
 <h2 id="analysis">Dataset Analysis</h2>
 The file length distributions of the four DnR building blocks are as follows. Note that FMA files occupy a single bin since all files are 30-sec length:
 
-<br><br>
-
-<img src="./assets/filelengths.pdf" alt=""border="3" />
-
-<br><br>
-
-The file length distributions of the four DnR building blocks are as follows. Note that FMA files occupy a single bin since all files are 30-sec length.
+<p align="center">
+  <img src="./assets/filelengths.pdf" title="hover text">
+</p>
 
 <br><br>
 
-<img src="./assets/data_stats.png" alt=""border="3" />
+We also measure the amount of inter-classes overlap, here for the whole DnR training set. Through the building process, we ensure to cover all overlapping scenarios, while emphasizing on the "all-classes" one (accounting for 50% of the data):
 
+<p align="center">
+  <img src="./assets/data_stats.png" title="hover text">
+</p>
+
+The average length per class files are also provided down below:
+
+<p align="center">
+  <img src="./assets/avg_len_files.png" title="hover text">
+</p>
+
+Annotations for each class are provided with time-stamps:
+
+<p align="center">
+  <img src="./assets/annots.png" title="hover text">
+</p>
 
 <hr />
 
 -----
 
 <h2 id="analysis">Experimental Validation</h2>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding-left: 15px;
+}
+table.left {
+  margin-left: auto; 
+  margin-right: auto;
 
+}
+</style>
 <table>
     <tr>
         <td></td>
@@ -134,7 +157,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td colspan="3">44.1 kHz</td>
     </tr>
     <tr>
-        <td>Model</td>
+        <td></td>
         <td>Music</td>
         <td>Speech</td>
         <td>SFX</td>
@@ -143,7 +166,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>SFX</td>
     </tr>
     <tr>
-        <td> No processing</td>
+        <td style="text-align:left"> No processing</td>
         <td>-6.61</td>
         <td>1.04</td>
         <td>-5.19</td>
@@ -152,7 +175,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>-4.94</td>
     </tr>
     <tr>
-        <td><img src="./assets/oraclepsf.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/oraclepsf.pdf" alt="" height=15 border=3></td>
         <td>11.99</td>
         <td>18.02</td>
         <td>13.60</td>
@@ -161,7 +184,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>13.83</td>
     </tr>
     <tr>
-        <td><img src="./assets/tasnet.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/tasnet.pdf" alt="" height=15 border=3></td>
         <td>2.52</td>
         <td>11.38</td>
         <td>4.15</td>
@@ -170,7 +193,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>4.01</td>
     </tr>
     <tr>
-        <td><img src="./assets/masktcn.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/masktcn.pdf" alt="" height=15 border=3></td>
         <td>2.74</td>
         <td>11.01</td>
         <td>4.02</td>
@@ -179,7 +202,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>4.47</td>
     </tr>
     <tr>
-        <td><img src="./assets/xumx32.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/xumx32.pdf" alt="" height=15 border=3></td>
         <td>3.37</td>
         <td>11.77</td>
         <td>4.73</td>
@@ -188,7 +211,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>5.16</td>
     </tr>
     <tr>
-        <td><img src="./assets/xumx64.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/xumx64.pdf" alt="" height=15 border=3></td>
         <td>3.83</td>
         <td>12.04</td>
         <td>4.92</td>
@@ -197,7 +220,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>5.42</td>
     </tr>
     <tr>
-        <td><img src="./assets/xumx256.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/xumx256.pdf" alt="" height=15 border=3></td>
         <td>3.06</td>
         <td>10.34</td>
         <td>3.93</td>
@@ -206,7 +229,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>4.12</td>
     </tr>
     <tr>
-        <td><img src="./assets/xumx64multidec.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/xumx64multidec.pdf" alt="" height=15 border=3></td>
         <td>3.84</td>
         <td>11.99</td>
         <td>4.99</td>
@@ -215,7 +238,7 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>5.11</td>
     </tr>
     <tr>
-        <td><img src="./assets/xumxmixedmultidec.pdf" alt="" height=15 border=3></td>
+    <td style="text-align:left"> <img src="./assets/xumxmixedmultidec.pdf" alt="" height=15 border=3></td>
         <td>4.47</td>
         <td>12.69</td>
         <td>5.55</td>
@@ -224,9 +247,24 @@ The file length distributions of the four DnR building blocks are as follows. No
         <td>6.03</td>
     </tr>
 </table>
+
 -----
 
 <h2 id="examples">Audio Example</h2>
+
+<details open="" class="details-reset border rounded-2">
+  <summary class="px-3 py-2 border-bottom">
+    <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-device-camera-video">
+    <path fill-rule="evenodd" d="..."></path>
+</svg>
+    <span aria-label="Video description dotnet-evergreen.mp4" class="m-1">dotnet-evergreen.mp4</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+
+  <video src="./assets/tape_sfx.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:300px;">
+
+  </video>
+</details>
 
 -----
 
