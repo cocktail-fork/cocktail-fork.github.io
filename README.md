@@ -1,11 +1,11 @@
-The DNR dataset is build from three, well-established, audio datasets; [Librispeech](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7178964), [Free Music Archive (FMA)](https://arxiv.org/pdf/1612.01840.pdf), and [Freesound Dataset 50k (FSD50K)](https://arxiv.org/pdf/2010.00475.pdf). We offer our dataset in both 16kHz and 44.1kHz sampling-rate along time-stamped annotations for each of the classes (genre for 'music', audio-tags for 'sound-effects', and transcription for 'speech'). We provide below more informations on how the dataset is build and what it's consists of exactly. We also go over the process of building the dataset from scratch for the cases it needs to.
+The DnR dataset is build from three, well-established, audio datasets; [Librispeech](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7178964), [Free Music Archive (FMA)](https://arxiv.org/pdf/1612.01840.pdf), and [Freesound Dataset 50k (FSD50K)](https://arxiv.org/pdf/2010.00475.pdf). We offer our dataset in both 16kHz and 44.1kHz sampling-rate along time-stamped annotations for each of the classes (genre for 'music', audio-tags for 'sound-effects', and transcription for 'speech'). We provide below more informations on how the dataset is build and what it's consists of exactly. We also go over the process of building the dataset from scratch for the cases it needs to.
 
 -----
 
 *   [Dataset Overview](#overview)
-*   [Get the DNR Dataset](#getdnr)
+*   [Get the DnR Dataset](#getdnr)
     *   [Download](#download)
-    *   [Building DNR From Scratch](#scratch)
+    *   [Building DnR From Scratch](#scratch)
 *   [Dataset Analysis](#analysis)
 *   [Audio Examples and Samples](#examples)
 *   [Resources and Support](#contact)
@@ -13,26 +13,26 @@ The DNR dataset is build from three, well-established, audio datasets; [Librispe
 -----
 
 <h2 id="overview">Dataset Overview</h2>
-The Divide and Remix (DNR) dataset is a dataset aiming at providing research support for a relatively unexplored case of source separation with mixtures involving music, speech, and sound-effects (SFX) as their sources. The dataset is build from three, well-established, datasets. Consequently if one wants to build DNR from scratch, the aforementioned datasets will have to be downloaded first. Alternatively, DNR is also available on Zenodo
+The Divide and Remix (DnR) dataset is a dataset aiming at providing research support for a relatively unexplored case of source separation with mixtures involving music, speech, and sound-effects (SFX) as their sources. The dataset is build from three, well-established, datasets. Consequently if one wants to build DnR from scratch, the aforementioned datasets will have to be downloaded first. Alternatively, DnR is also available on Zenodo
 
 -----
 
-<h2 id="getdnr">Get the DNR Dataset</h2>
-In order to obtain DNR, several options are available depending on the task at hand:
+<h2 id="getdnr">Get the DnR Dataset</h2>
+In order to obtain DnR, several options are available depending on the task at hand:
 <h3 id="download">Download</h3>
 
-- DNR-HQ (44.1kHz) is available on Zenodo at the [following](#dummy) or simply run:
+- DnR-HQ (44.1kHz) is available on Zenodo at the [following](#dummy) or simply run:
 ```
 wget link_to_zenodo_dnr
 ```
 
-- Alternatively, if DNR-16kHz is needed, please first download DNR-HQ locally. You can then downsample the dataset (either in-place or not) by cloning the [dnr-utils](https://www.merl.com/) repository and running:
+- Alternatively, if DnR-16kHz is needed, please first download DnR-HQ locally. You can then downsample the dataset (either in-place or not) by cloning the [dnr-utils](https://www.merl.com/) repository and running:
 ```
 python dnr_utils.py --task=downsample --inplace=True
 ```
 
-<h3 id="scratch">Building DNR From Scratch</h3>
-Since DNR is directly drawn from *FSD50K*, *LibriSpeech*/*LibriVox*, and *FMA, we first need to download these datasets. Please head to the following links for more details on how to get them:
+<h3 id="scratch">Building DnR From Scratch</h3>
+Since DnR is directly drawn from *FSD50K*, *LibriSpeech*/*LibriVox*, and *FMA, we first need to download these datasets. Please head to the following links for more details on how to get them:
 
 <h4 id="scratch">Datasets Downloads</h4>
 
@@ -47,7 +47,7 @@ Since DNR is directly drawn from *FSD50K*, *LibriSpeech*/*LibriVox*, and *FMA, w
 <br><br>
 </p>
 
-Please note that for *FMA*, the [medium set](https://os.unil.cloud.switch.ch/fma/fma_medium.zip) only is required. In addition to the audio files, [the metadata](https://os.unil.cloud.switch.ch/fma/fma_metadata.zip) should also be downloaded. For *LibriSpeech* DNR uses [dev-clean](https://www.openslr.org/resources/12/dev-clean.tar.gz), [test-clean](https://www.openslr.org/resources/12/test-clean.tar.gz), and [train-clean-100](https://www.openslr.org/resources/12/train-clean-100.tar.gz). DNR will use the folder structure as well as metadata from LibriSpeech, but ultimately will build the LibriSpeech-HQ dataset off [the original LibriVox mp3s](https://www.openslr.org/resources/12/original-mp3.tar.gz), which is why we need them both for building DNR.
+Please note that for *FMA*, the [medium set](https://os.unil.cloud.switch.ch/fma/fma_medium.zip) only is required. In addition to the audio files, [the metadata](https://os.unil.cloud.switch.ch/fma/fma_metadata.zip) should also be downloaded. For *LibriSpeech* DnR uses [dev-clean](https://www.openslr.org/resources/12/dev-clean.tar.gz), [test-clean](https://www.openslr.org/resources/12/test-clean.tar.gz), and [train-clean-100](https://www.openslr.org/resources/12/train-clean-100.tar.gz). DnR will use the folder structure as well as metadata from LibriSpeech, but ultimately will build the LibriSpeech-HQ dataset off [the original LibriVox mp3s](https://www.openslr.org/resources/12/original-mp3.tar.gz), which is why we need them both for building DnR.
 
 After download, all four datasets are expected to be found in the same root directory. Our root tree may look something like that. As the standardization script will look for specific file name, __please make sure that all directory names conform to the ones described below__:
 ```
@@ -89,9 +89,9 @@ The standardization command may look something like:
 python standardization.py --fsd50k-path=./FSD50K --fma-path=./FMA --librivox-path=./LibriVox --librispeech-path=./LibiSpeech  --dest-dir=./dest --validate-audio=True
 ```
 
-<h4 id="scratch">DNR Dataset Compilation</h4>
+<h4 id="scratch">DnR Dataset Compilation</h4>
 
-Once the three resulting datasets are standardized, we are ready to finally compile DNR. At this point you should already have cloned the [dnr-utils](https://www.merl.com/) repository, which contains two key files:
+Once the three resulting datasets are standardized, we are ready to finally compile DnR. At this point you should already have cloned the [dnr-utils](https://www.merl.com/) repository, which contains two key files:
 
 - `config.py` contains some configuration entries needed by the main script builder. You want to set all the appropriate paths pointing to your local datasets and ground truth files in there. 
 - The compilation for a given set (here, `train`, `val`, and `eval`) can be executed with `compile_dataset.py`, for example by running the following commands __for each set__:
@@ -239,12 +239,12 @@ table.left {
     </tr>
     <tr>
     <td style="text-align:left"> <img src="./assets/xumxmixedmultidec.pdf" alt="" height=15 border=3></td>
-        <td>4.47</td>
-        <td>12.69</td>
-        <td>5.55</td>
-        <td>4.62</td>
-        <td>12.68</td>
-        <td>6.03</td>
+        <td><span style="font-weight:bold">4.47</span></td>
+        <td><span style="font-weight:bold">12.69</span></td>
+        <td><span style="font-weight:bold">5.55</span></td>
+        <td><span style="font-weight:bold">4.62</span></td>
+        <td><span style="font-weight:bold">12.68</span></td>
+        <td><span style="font-weight:bold">6.03</span></td>
     </tr>
 </table>
 
@@ -261,7 +261,7 @@ table.left {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="./assets/tape_sfx.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:300px;">
+  <video src="./assets/medias/tape_sfx.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:300px;">
 
   </video>
 </details>
