@@ -1,4 +1,4 @@
-# Divide and Remaster Utility Scripts
+# The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks
 
 ![CFP Icon](/assets/cocktail_force.jpg)
 
