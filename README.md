@@ -84,7 +84,7 @@ root
 
 <h4 id="scratch">Datasets Standardization</h4>
 
-Once all four datasets are downloaded, some standardization work needs to be taken care of. The standardization process can be be executed by running [`standardization.py`](https://www.merl.com/), which can be found in the [dnr-utils](https://www.merl.com/) repository. Prior to running the script you may want to install all the necessary dependencies included as part of the `requirement.txt` with `pip install -r requirements.txt`. 
+Once all four datasets are downloaded, some standardization work needs to be taken care of. The standardization process can be be executed by running [`standardization.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/standardization.py), which can be found in the [dnr-utils](https://github.com/darius522/dnr-utils) repository. Prior to running the script you may want to install all the necessary dependencies included as part of the `requirement.txt` with `pip install -r requirements.txt`. 
 __Note:__ `pydub` uses `ffmpeg` under its hood, a system install of `fmmpeg` is thus required.
 The standardization command may look something like:
 ```
@@ -93,10 +93,10 @@ python standardization.py --fsd50k-path=./FSD50K --fma-path=./FMA --librivox-pat
 
 <h4 id="scratch">DnR Dataset Compilation</h4>
 
-Once the three resulting datasets are standardized, we are ready to finally compile DnR. At this point you should already have cloned the [dnr-utils](https://www.merl.com/) repository, which contains two key files:
+Once the three resulting datasets are standardized, we are ready to finally compile DnR. At this point you should already have cloned the [dnr-utils](https://github.com/darius522/dnr-utils) repository, which contains two key files:
 
-- `config.py` contains some configuration entries needed by the main script builder. You want to set all the appropriate paths pointing to your local datasets and ground truth files in there. 
-- The compilation for a given set (here, `train`, `val`, and `eval`) can be executed with `compile_dataset.py`, for example by running the following commands __for each set__:
+- [`config.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/config.py) contains some configuration entries needed by the main script builder. You want to set all the appropriate paths pointing to your local datasets and ground truth files in there. 
+- The compilation for a given set (here, `train`, `val`, and `eval`) can be executed with [`compile_dataset.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/compile_dataset.py), for example by running the following commands __for each set__:
 ```
 python compile_dataset.py with cfg.train
 ```
