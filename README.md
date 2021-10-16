@@ -1,4 +1,8 @@
-# The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks
+<h1> 
+<p align="center">
+The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks
+</p>
+</h1>
 
 ![CFP Icon](/assets/cocktail_force.jpg)
 
