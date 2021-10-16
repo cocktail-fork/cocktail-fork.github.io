@@ -32,7 +32,7 @@ python dnr_utils.py --task=downsample --inplace=True
 ```
 
 <h3 id="scratch">Building DnR From Scratch</h3>
-Since DnR is directly drawn from *FSD50K*, *LibriSpeech*/*LibriVox*, and *FMA, we first need to download these datasets. Please head to the following links for more details on how to get them:
+In the section, we go over the DnR building process. Since DnR is directly drawn from *FSD50K*, *LibriSpeech*/*LibriVox*, and *FMA, we first need to download these datasets. Please head to the following links for more details on how to get them:
 
 <h4 id="scratch">Datasets Downloads</h4>
 
