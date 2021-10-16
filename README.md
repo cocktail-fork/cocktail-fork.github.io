@@ -1,6 +1,6 @@
 <h1> 
 <p align="center">
-The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks
+The Cocktail Fork Problem:</br>Three-Stem Audio Separation for Real-World Soundtracks
 </p>
 </h1>
 
