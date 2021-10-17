@@ -1,4 +1,4 @@
 title: <p align="center"> The Cocktail Fork Problem:</br>Three-Stem Audio Separation for Real-World Soundtracks </p>
 description: <p align="center"> Resources page for the Divide and Remaster (DnR) dataset introduced as part of the Cocktail Fork Problem paper </p>
 theme: jekyll-theme-tactile
-
+gems: ["jemoji"]
