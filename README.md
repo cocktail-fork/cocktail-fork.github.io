@@ -1,5 +1,5 @@
 <h1> <p align="center"> The Cocktail Fork Problem:</br>Three-Stem Audio Separation for Real-World Soundtracks </p> </h1>
-<h2> <p align="center">description: <p align="center"> Resources page for the Divide and Remaster (DnR) dataset introduced as part of the Cocktail Fork Problem paper </p></h2>
+<h2> <p align="center"><p align="center"> Resources page for the Divide and Remaster (DnR) dataset introduced as part of the Cocktail Fork Problem paper </p></h2>
 
 ![CFP Icon](/assets/cocktail_force.png)
 
