@@ -14,6 +14,7 @@ The DnR dataset is build from three, well-established, audio datasets; [Librispe
 *   [Get the DnR Dataset](#getdnr)
     *   [Download](#download)
     *   [Building DnR From Scratch](#scratch)
+    *   [Known Issues](#scratch)
 *   [Dataset Analysis](#analysis)
 *   [Video Examples](#examples)
 *   [Contact and Support](#contact)
@@ -112,6 +113,14 @@ python compile_dataset.py with cfg.val
 ```
 python compile_dataset.py with cfg.eval
 ```
+
+<h3 id="scratch">Known Issues</h3>
+
+Some known bugs and issues that we're aware. if not listed, feel free to open a new issue [here](https://github.com/darius522/dnr-utils/issues):
+
+* 
+*
+*
 
 -----
 
@@ -287,3 +296,8 @@ table.left {
 
 <h2 id="contact">Contact and Support</h2>
 
+Have an issue, concern, or question about DnR or its utility tools ? If so, please open an issue [here](https://github.com/darius522/dnr-utils/issues)
+
+For any other inquiries, feel free to shoot an email at: __firstname.lastname@gmail.com__, my name is Darius Petermann ;)
+
+-----
