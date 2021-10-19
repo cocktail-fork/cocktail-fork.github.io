@@ -174,7 +174,7 @@ table.left {
         <td>SFX</td>
     </tr>
     <tr>
-        <td style="text-align:left"> No processing</td>
+        <td style="text-align:left"> <img src="./assets/results/no_processing.png" alt="" height=20 border=0></td>
         <td>-6.61</td>
         <td>1.04</td>
         <td>-5.19</td>
@@ -183,7 +183,7 @@ table.left {
         <td>-4.94</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/oraclepsf.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/oracle.png" alt="" height=20 border=0></td>
         <td>11.99</td>
         <td>18.02</td>
         <td>13.60</td>
@@ -192,67 +192,94 @@ table.left {
         <td>13.83</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/tasnet.pdf" alt="" height=15 border=3></td>
-        <td>2.52</td>
-        <td>11.38</td>
-        <td>4.15</td>
+        <td style="text-align:left"> <img src="./assets/results/convtasnet.png" alt="" height=20 border=0></td>
+        <td>2.38</td>
+        <td>10.98</td>
+        <td>3.99</td>
         <td>2.06</td>
         <td>10.72</td>
         <td>4.01</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/masktcn.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/masktcn.png" alt="" height=20 border=0></td>
         <td>2.74</td>
         <td>11.01</td>
         <td>4.02</td>
-        <td>2.25</td>
-        <td>10.58</td>
-        <td>4.47</td>
+        <td>2.28</td>
+        <td>10.66</td>
+        <td>4.22</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/xumx32.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/umx64.png" alt="" height=20 border=0></td>
+        <td>3.73</td>
+        <td>12.32</td>
+        <td>4.44</td>
+        <td>3.45</td>
+        <td>12.02</td>
+        <td>4.09</td>
+    </tr>
+    <tr>
+        <td style="text-align:left"> <img src="./assets/results/xumx32.png" alt="" height=20 border=0></td>
         <td>3.37</td>
         <td>11.77</td>
         <td>4.73</td>
-        <td>3.41</td>
-        <td>11.76</td>
-        <td>5.16</td>
+        <td>3.5</td>
+        <td>11.79</td>
+        <td>5.36</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/xumx64.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/xumx64.png" alt="" height=20 border=0></td>
         <td>3.83</td>
         <td>12.04</td>
         <td>4.92</td>
-        <td>3.91</td>
-        <td>11.97</td>
-        <td>5.42</td>
+        <td>3.72</td>
+        <td>12.06</td>
+        <td>5.33</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/xumx256.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/xumx128.png" alt="" height=20 border=0></td>
+        <td>3.51</td>
+        <td>11.4</td>
+        <td>4.49</td>
+        <td>3.52</td>
+        <td>11.02</td>
+        <td>4.86</td>
+    </tr>
+    <tr>
+        <td style="text-align:left"> <img src="./assets/results/xumx256.png" alt="" height=20 border=0></td>
         <td>3.06</td>
         <td>10.34</td>
         <td>3.93</td>
-        <td>2.82</td>
-        <td>9.93</td>
-        <td>4.12</td>
+        <td>3.51</td>
+        <td>10.95</td>
+        <td>4.81</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/xumx64multidec.pdf" alt="" height=15 border=3></td>
+        <td style="text-align:left"> <img src="./assets/results/xumx_multi.png" alt="" height=20 border=0></td>
         <td>3.84</td>
         <td>11.99</td>
         <td>4.99</td>
-        <td>3.69</td>
-        <td>11.64</td>
-        <td>5.11</td>
+        <td>3.87</td>
+        <td>12.07</td>
+        <td>5.46</td>
     </tr>
     <tr>
-    <td style="text-align:left"> <img src="./assets/xumxmixedmultidec.pdf" alt="" height=15 border=3></td>
-        <td><span style="font-weight:bold">4.47</span></td>
-        <td><span style="font-weight:bold">12.69</span></td>
-        <td><span style="font-weight:bold">5.55</span></td>
-        <td><span style="font-weight:bold">4.62</span></td>
-        <td><span style="font-weight:bold">12.68</span></td>
-        <td><span style="font-weight:bold">6.03</span></td>
+        <td style="text-align:left"> <img src="./assets/results/mru.png" alt="" height=20 border=0></td>
+        <td>3.76</td>
+        <td> <b>12.78</b></td>
+        <td>4.32</td>
+        <td>3.66</td>
+        <td>12.58</td>
+        <td>5.05</td>
+    </tr>
+    <tr>
+        <td style="text-align:left"> <img src="./assets/results/mrx.png" alt="" height=20 border=0></td>
+        <td> <b>4.39 </b></td>
+        <td>12.56</td>
+        <td> <b> 5.4</b></td>
+        <td>  <b>4.42</b></td>
+        <td> <b>12.65</b></td>
+        <td>  <b>5.87</b></td>
     </tr>
 </table>
 

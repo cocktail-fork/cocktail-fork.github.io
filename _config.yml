@@ -1,3 +1,13 @@
-title: The Cocktail Fork Problem </br> Three-Stem Audio Separation for Real-World Soundtracks
-description: 
-theme: jekyll-theme-tactile
+title: The Cocktail Fork Problem:‌‌‌‌</br>Three-Stem Audio Separation for Real-World Soundtracks
+logo:
+description:
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal
+github:
+  zip_url: http://zenodo.com
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+#- jemoji
+
