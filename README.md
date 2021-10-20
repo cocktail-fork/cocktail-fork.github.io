@@ -47,11 +47,11 @@ In the section, we go over the DnR building process. Since DnR is directly drawn
 
 <p align="center">
 
-:police_car: <a href="https://zenodo.org/record/4060432#.YTkaoN8pBPY">FSD50K</a> :police_car:
+<a href="https://zenodo.org/record/4060432#.YTkaoN8pBPY">FSD50K</a>
 <br>
-:notes: <a href="https://github.com/mdeff/fma">FMA-Medium Set</a> :notes:
+<a href="https://github.com/mdeff/fma">FMA-Medium Set</a>
 <br>
-:speaking_head: <a href="https://www.openslr.org/12">LibriSpeech/LibriVox</a> :speaking_head:
+<a href="https://www.openslr.org/12">LibriSpeech/LibriVox</a>
 
 <br><br>
 </p>
@@ -128,7 +128,7 @@ Some known bugs and issues that we're aware. if not listed, feel free to open a 
 The file length distributions of the four DnR building blocks are as follows. Note that FMA files occupy a single bin since all files are 30-sec length:
 
 <p align="center">
-  <img src="./assets/filelengths.pdf" title="hover text">
+  <img src="./assets/filelengths.png" title="hover text">
 </p>
 
 <br><br>
