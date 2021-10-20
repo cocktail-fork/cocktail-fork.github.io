@@ -125,7 +125,6 @@ Some known bugs and issues that we're aware. if not listed below, feel free to o
 * If building from scratch, `pydub ` will fail at reading 15 mp3 files from the FMA medium-set and will return the following error:  `mp3 @ 0x559b8b084880] Failed to read frame size: Could not seek to 1026.`
 
 * If building DnR from scratch, the script may return the following error, coming from `pyloudnorm`: `Audio must be have length greater than the block size`. That's because some audio segment, especially SFX events, may be shorter than 0.2 seconds, which is the minimum sample length (window) required by `pyloudnorm` for normalizing the audio. We just ignore these segments.
-*
 
 -----
 
