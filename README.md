@@ -6,7 +6,7 @@
 
 ![CFP Icon](/assets/cocktail_force.png)
 
-The DnR dataset is build from three, well-established, audio datasets; [Librispeech](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7178964), [Free Music Archive (FMA)](https://arxiv.org/pdf/1612.01840.pdf), and [Freesound Dataset 50k (FSD50K)](https://arxiv.org/pdf/2010.00475.pdf). We offer our dataset in both 16kHz and 44.1kHz sampling-rate along time-stamped annotations for each of the classes (genre for 'music', audio-tags for 'sound-effects', and transcription for 'speech'). We provide below more informations on how the dataset is build and what it's consists of exactly. We also go over the process of building the dataset from scratch for the cases it needs to.
+The DnR dataset is built from three, well-established, audio datasets; [Librispeech](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7178964), [Free Music Archive (FMA)](https://arxiv.org/pdf/1612.01840.pdf), and [Freesound Dataset 50k (FSD50K)](https://arxiv.org/pdf/2010.00475.pdf). We offer our dataset in both 16kHz and 44.1kHz sampling-rate along time-stamped annotations for each of the classes (genre for 'music', audio-tags for 'sound-effects', and transcription for 'speech'). We provide below more informations on how the dataset is built and what it's consists of exactly. We also go over the process of building the dataset from scratch for the cases it needs to.
 
 -----
 
@@ -16,12 +16,13 @@ The DnR dataset is build from three, well-established, audio datasets; [Librispe
     *   [Building DnR From Scratch](#scratch)
     *   [Known Issues](#issues)
 *   [Dataset Analysis](#analysis)
+*   [Citation](#citation)
 *   [Contact and Support](#contact)
 
 -----
 
 <h2 id="overview">Dataset Overview</h2>
-The Divide and Remix (DnR) dataset is a dataset aiming at providing research support for a relatively unexplored case of source separation with mixtures involving music, speech, and sound-effects (SFX) as their sources. The dataset is build from three, well-established, datasets. Consequently if one wants to build DnR from scratch, the aforementioned datasets will have to be downloaded first. Alternatively, DnR is also available on Zenodo
+The Divide and Remix (DnR) dataset is a dataset aiming at providing research support for a relatively unexplored case of source separation with mixtures involving music, speech, and sound-effects (SFX) as their sources. The dataset is built from three, well-established, datasets. Consequently if one wants to build DnR from scratch, the aforementioned datasets will have to be downloaded first. Alternatively, DnR is also available on Zenodo
 
 -----
 
@@ -106,7 +107,7 @@ python standardization.py --fsd50k-path=./FSD50K --fma-path=./FMA --librivox-pat
 Once the three resulting datasets are standardized, we are ready to finally compile DnR. At this point you should already have cloned the [dnr-utils](https://github.com/darius522/dnr-utils) repository, which contains two key files:
 
 - [`config.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/config.py) contains some configuration entries needed by the main script builder. You want to set all the appropriate paths pointing to your local datasets and ground truth files in there. 
-- The compilation for a given set (here, `train`, `val`, and `eval`) can be executed with [`compile_dataset.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/compile_dataset.py), for example by running the following commands __for each set__:
+- The compilation for a given set (here, `train`, `val`, and `eval`) can be executed with [`compile_dataset.py`](https://github.com/darius522/dnr-utils/blob/d895d485bb6d2bde9d7a79faaa7a12172d45b375/compile_dataset.py), for example by running the following commands __for each set__:  
 ```
 python compile_dataset.py with cfg.train
 ```
@@ -294,6 +295,23 @@ table.left {
         <td>  <b>5.87</b></td>
     </tr>
 </table>
+
+-----
+
+<h2 id="citation">Citation</h2>
+
+DnR is a joint effort between [Mitsubishi Electronics Research Laboratories (MERL)](https://www.merl.com) and the [Signals and AI Group in Engineering (SAIGE) at Indiana University](https://saige.sice.indiana.edu/). If you use DnR please cite [our paper](https://arxiv.org/abs/2110.09958) in which we introduce the dataset as part of the Cocktail Fork Problem:
+
+```
+@article{Petermann2021cocktail,
+    title={The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks}, 
+    author={Darius Petermann and Gordon Wichern and Zhong-Qiu Wang and Jonathan Le Roux},
+    year={2021},
+    eprint={2110.09958},
+    archivePrefix={arXiv},
+    primaryClass={eess.AS}
+}
+```
 
 -----
 

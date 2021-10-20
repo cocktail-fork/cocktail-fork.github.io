@@ -37,7 +37,7 @@ hvr -> hover
     --clr-table-header-and-dt: hsl(0, 0%, var(--L-table-header-and-dt)); //more info on dt's https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dd_test
   }
   
-  @mixin light-colors {
+  @mixin hover-colors {
     // buttons
     --L-a-text: 35%;
     --L-buttons-main-bg: 96%;
@@ -67,6 +67,35 @@ hvr -> hover
     --L-table-header-and-dt: 27%; //more on dt's https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dd_test
   }
   
+  @mixin light-colors {
+    // buttons
+    --L-a-text: 60%;
+    --L-buttons-main-bg: 17%;
+    --L-buttons-main-border: 26%;
+    --L-buttons-main-text: 76%;
+    --L-buttons-main-text-hover: 80%;
+    // headers + text
+    --L-h1-and-bold: 90%;
+    --L-h2: 83%;
+    --L-h-3-6: 76%;
+    --L-text: 70%;
+    // code blocks  
+    --L-code-text: 80%;
+    --L-code-bg: 3%;
+    --L-code-border: 5%;
+    --L-code-bold-text: 100%;
+    //kbd these are keyboard shortcuts eg <kbd>CMD+R</kbd>
+    --L-kbd-bg: 30%;
+    --L-kbd-border: 45%;
+    --L-kbd-border-bottom-and-shadow: 55%;
+    --L-kbd-text: 100%;
+    // misilainius
+    --L-splitter-blockquote-and-section: 15%;// for elements like hr and blockquote
+    --L-bg: 10%;
+    --L-small-in-a: 60%;
+    --L-table-header-and-dt: 90%; //more on dt's https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dd_test
+}
+
   @mixin dark-colors {
       // buttons
       --L-a-text: 60%;
@@ -99,10 +128,10 @@ hvr -> hover
   :root {
     --L-a-text-hover-change: 0.8;//the number that --L-a-text gets changed by when it is hovered eg a button has 30% luminosity when left it luminosity is then timesed by 0.8 when the button is hovered
     @include colors;
-    @include light-colors;
+    @include hover-colors;
   }
   
-  @media (prefers-color-scheme: dark) {//we would not like to apply dark mode if content is on printer as that would use a lot of ink
+  @media screen and (prefers-color-scheme: dark) {//we would not like to apply dark mode if content is on printer as that would use a lot of ink
       :root{
           @include dark-colors;
       }
