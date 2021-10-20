@@ -16,7 +16,6 @@ The DnR dataset is build from three, well-established, audio datasets; [Librispe
     *   [Building DnR From Scratch](#scratch)
     *   [Known Issues](#issues)
 *   [Dataset Analysis](#analysis)
-*   [Video Examples](#examples)
 *   [Contact and Support](#contact)
 
 -----
