@@ -300,14 +300,14 @@ table.left {
 
 <h2 id="citation">Citation</h2>
 
-DnR is a joint effort between [Mitsubishi Electronics Research Laboratories (MERL)](https://www.merl.com) and the [Signals and AI Group in Engineering (SAIGE) at Indiana University](https://saige.sice.indiana.edu/). If you use DnR please cite [our paper](https://arxiv.org/abs/2110.09958) in which we introduce the dataset as part of the Cocktail Fork Problem:
+If you use DnR please cite [our paper](https://arxiv.org/abs/2110.09958) in which we introduce the dataset as part of the *Cocktail Fork Problem*:
 
 ```
 @article{Petermann2021cocktail,
     title={The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks}, 
-    author={Darius Petermann and Gordon Wichern and Zhong-Qiu Wang and Jonathan Le Roux},
+    author={Darius Petermann and Gordon Wichern and Zhong-Qiu Wang and Jonathan {Le Roux}},
     year={2021},
-    eprint={2110.09958},
+    journal={arXiv preprint arXiv:2110.09958},
     archivePrefix={arXiv},
     primaryClass={eess.AS}
 }
