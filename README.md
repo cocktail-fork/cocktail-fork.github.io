@@ -3,7 +3,52 @@
 
 #### &#9758;  <a href="https://www.youtube.com/watch?v=Tufy3CqdWtc" target="_blank">[Demo Video - Trimmed for UK]</a>
 
+-----
+<h3 id="overview">Additional Individual Examples with Isolated Stems</h3>
 
+<style>
+table, th, td {
+  border: 2px solid white;
+  padding-left: 5px;
+}
+table.left {
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+</style>
+<table>
+<tr>
+    <td></td>
+    <td style="text-align:center">Music</td>
+    <td style="text-align:center">Speech</td>
+    <td style="text-align:center">SFX</td>
+</tr>
+<tr>
+    <td style="text-align:center;font-weight:bold">Jimmy Fallon</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/XKPdr_crWxE" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/GuxfRkspqxQ" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/DHl3kv2SAPI" style="display:block;">&nbsp;Link</a></td>
+</tr>
+<tr>
+    <td style="text-align:center;font-weight:bold">Gordon Ramsey (UK Restricted)</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/MKjqhGd0t6Y" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/_uQF5gfGrsk" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/J5bGKZFkDso" style="display:block;">&nbsp;Link</a></td>
+</tr>
+<tr>
+    <td style="text-align:center;font-weight:bold">FlexTape Commercial</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/tHUOAAopm0s" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/cUwccEZu7ok" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/yjo7InFIIbY" style="display:block;">&nbsp;Link</a></td>
+</tr>
+<tr>
+    <td style="text-align:center;font-weight:bold">Spiderman</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
+</tr>
+</table>
 -----
 
 <h2> <p align="center"> Resources page for the Divide and Remaster (DnR) dataset introduced as part of the Cocktail Fork Problem paper </p></h2>
@@ -167,7 +212,7 @@ Annotations for each class are provided with time-stamps:
 <h2 id="analysis">Experimental Validation</h2>
 <style>
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid white;
   padding-left: 15px;
 }
 table.left {
