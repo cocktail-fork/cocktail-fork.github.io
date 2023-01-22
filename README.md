@@ -31,12 +31,6 @@ table.left {
     <td style="text-align:center"><a href="https://www.youtube.com/embed/DHl3kv2SAPI" style="display:block;">&nbsp;Link</a></td>
 </tr>
 <tr>
-    <td style="text-align:center;font-weight:bold">Gordon Ramsey (UK Restricted)</td>
-    <td style="text-align:center"><a href="https://www.youtube.com/embed/MKjqhGd0t6Y" style="display:block;">&nbsp;Link</a></td>
-    <td style="text-align:center"><a href="https://www.youtube.com/embed/_uQF5gfGrsk" style="display:block;">&nbsp;Link</a></td>
-    <td style="text-align:center"><a href="https://www.youtube.com/embed/J5bGKZFkDso" style="display:block;">&nbsp;Link</a></td>
-</tr>
-<tr>
     <td style="text-align:center;font-weight:bold">FlexTape Commercial</td>
     <td style="text-align:center"><a href="https://www.youtube.com/embed/tHUOAAopm0s" style="display:block;">&nbsp;Link</a></td>
     <td style="text-align:center"><a href="https://www.youtube.com/embed/cUwccEZu7ok" style="display:block;">&nbsp;Link</a></td>
@@ -47,6 +41,12 @@ table.left {
     <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
     <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
     <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
+</tr>
+<tr>
+    <td style="text-align:center;font-weight:bold">Gordon Ramsey (Unavailable in UK)</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/MKjqhGd0t6Y" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/_uQF5gfGrsk" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/J5bGKZFkDso" style="display:block;">&nbsp;Link</a></td>
 </tr>
 </table>
 -----
@@ -79,11 +79,7 @@ The Divide and Remix (DnR) dataset is a dataset aiming at providing research sup
 In order to obtain DnR, several options are available depending on the task at hand:
 <h3 id="download">Download</h3>
 
-- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/5574713) or simply run:
-```
-curl https://zenodo.org/record/5574713/files/dnr.tar.gz\?download\=1 -o dnr.tar.gz
-```  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or `wget` for the Linux folks.
+- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/6949108#.Y82tMi-B3yI). **Note:** We recently addressed several issues found from the original dataset (in regards to annotations, mainly). An updated version has now been uploaded to Zenodo. Make sure you use it instead. More info on at the Zenodo link!
 
 - Alternatively, if DnR-16kHz is needed, please first download DnR-HQ locally. You can then downsample the dataset (either in-place or not) by cloning the [dnr-utils](https://github.com/darius522/dnr-utils) repository and running:
 ```
