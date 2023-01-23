@@ -79,7 +79,7 @@ The Divide and Remix (DnR) dataset is a dataset aiming at providing research sup
 In order to obtain DnR, several options are available depending on the task at hand:
 <h3 id="download">Download</h3>
 
-- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/6949108#.Y82tMi-B3yI). **Note:** We recently addressed several issues found from the original dataset (in regards to annotations, mainly). An updated version has now been uploaded to Zenodo. Make sure you use it instead. More info on at the Zenodo link!
+- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/6949108#.Y86-di-B3yJ). **Note:** We recently addressed several issues found from the original dataset (in regards to annotations, mainly). An updated version has now been uploaded to Zenodo. Make sure you use it instead. More info on at the Zenodo link!
 
 - Alternatively, if DnR-16kHz is needed, please first download DnR-HQ locally. You can then downsample the dataset (either in-place or not) by cloning the [dnr-utils](https://github.com/darius522/dnr-utils) repository and running:
 ```
@@ -95,7 +95,7 @@ In the section, we go over the DnR building process. Since DnR is directly drawn
 
 <p align="center">
 
-<a href="https://zenodo.org/record/4060432#.YTkaoN8pBPY">FSD50K</a>
+<a href="https://zenodo.org/record/6949108#.Y86-di-B3yJ">FSD50K</a>
 <br>
 <a href="https://github.com/mdeff/fma">FMA-Medium Set</a>
 <br>
@@ -349,13 +349,12 @@ table.left {
 If you use DnR please cite [our paper](https://arxiv.org/abs/2110.09958) in which we introduce the dataset as part of the *Cocktail Fork Problem*:
 
 ```
-@article{Petermann2021cocktail,
-    title={The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks}, 
-    author={Darius Petermann and Gordon Wichern and Zhong-Qiu Wang and Jonathan {Le Roux}},
-    year={2021},
-    journal={arXiv preprint arXiv:2110.09958},
-    archivePrefix={arXiv},
-    primaryClass={eess.AS}
+@InProceedings{Petermann2022CFP,
+  author = {Petermann, Darius and Wichern, Gordon and Wang, Zhong-Qiu and {Le Roux}, Jonathan},
+  title = {The Cocktail Fork Problem: Three-Stem Audio Separation for Real-World Soundtracks},
+  booktitle = {2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year = 2022,
+  month = may
 }
 ```
 
