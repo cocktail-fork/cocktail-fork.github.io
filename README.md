@@ -79,7 +79,7 @@ The Divide and Remix (DnR) dataset is a dataset aiming at providing research sup
 In order to obtain DnR, several options are available depending on the task at hand:
 <h3 id="download">Download</h3>
 
-- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/6949108#.Y86-di-B3yJ). **Note:** We recently addressed several issues found from the original dataset (in regards to annotations, mainly). An updated version has now been uploaded to Zenodo. Make sure you use it instead. More info on at the Zenodo link!
+- DnR-HQ (44.1kHz) is available on Zenodo at the [following](https://zenodo.org/record/6949108#.Y86_pS-B3yI). **Note:** We recently addressed several issues found from the original dataset (in regards to annotations, mainly). An updated version has now been uploaded to Zenodo. Make sure you use it instead. More info on at the Zenodo link!
 
 - Alternatively, if DnR-16kHz is needed, please first download DnR-HQ locally. You can then downsample the dataset (either in-place or not) by cloning the [dnr-utils](https://github.com/darius522/dnr-utils) repository and running:
 ```
@@ -95,7 +95,7 @@ In the section, we go over the DnR building process. Since DnR is directly drawn
 
 <p align="center">
 
-<a href="https://zenodo.org/record/6949108#.Y86-di-B3yJ">FSD50K</a>
+<a href="https://zenodo.org/record/6949108#.Y86_pS-B3yI">FSD50K</a>
 <br>
 <a href="https://github.com/mdeff/fma">FMA-Medium Set</a>
 <br>
