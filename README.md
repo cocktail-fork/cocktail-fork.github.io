@@ -72,7 +72,7 @@ The DnR dataset is built from three, well-established, audio datasets; [Librispe
 -----
 
 <h2 id="repro">Official Codebase and Experiment Reproduction</h2>
-To access the official paper codebase, which includes a pre-trained checkpoint, the proposed MRX model, as well as the full training and evaluation pipeline, please visite [MERL's official CFP github repo](https://github.com/merlresearch/cocktail-fork-separation)
+To access the official paper codebase, which includes a pre-trained checkpoint, the proposed MRX model, as well as the full training and evaluation pipeline, please visite [MERLs official CFP GitHub page](https://github.com/merlresearch/cocktail-fork-separation).
 
 -----
 
