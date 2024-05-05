@@ -38,9 +38,9 @@ table.left {
 </tr>
 <tr>
     <td style="text-align:center;font-weight:bold">Spiderman</td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/nqCPUYyfF1A" style="display:block;">&nbsp;Link</a></td>
     <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
-    <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
-    <td style="text-align:center"><a href="https://www.youtube.com/embed/hLBilWTHWMs" style="display:block;">&nbsp;Link</a></td>
+    <td style="text-align:center"><a href="https://www.youtube.com/embed/mlTGEMniI9Y" style="display:block;">&nbsp;Link</a></td>
 </tr>
 <tr>
     <td style="text-align:center;font-weight:bold">Gordon Ramsey (Unavailable in UK)</td>
